@@ -55,9 +55,9 @@ export default function LandingPage() {
             carouselItems={[
               { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/close-up-male-fashion-designer-s-hand-taking-measurement-blue-fabric-with-yellow-measuring-tape_23-2148180373.jpg" },
               { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/close-up-groom-getting-dressed-his-wedding-day-putting-decoration-brooch-lapel-his-jacket_637285-954.jpg" },
-              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg" },
-              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg" },
-              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg" },
+              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg?_wi=1" },
+              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg?_wi=1" },
+              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg?_wi=1" },
               { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg" }
             ]}
           />
@@ -70,7 +70,7 @@ export default function LandingPage() {
             description="La nostra sartoria nasce nel cuore di Roma per ridare vita ai canoni dell'eleganza classica."
             subdescription="Ogni capo che realizziamo rispetta la tradizione sartoriale italiana, con una vestibilità che accarezza la silhouette."
             icon={ShieldCheck}
-            imageSrc="http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg"
+            imageSrc="http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg?_wi=2"
             useInvertedBackground={false}
           />
         </div>
@@ -82,8 +82,8 @@ export default function LandingPage() {
             textboxLayout="split"
             useInvertedBackground={false}
             features={[
-              { id: 1, title: "Cucito a mano", description: "Ogni singola asola è rifinita manualmente", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg" },
-              { id: 2, title: "Tessuti Premium", description: "Selezioniamo solo le fibre più nobili", imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg" }
+              { id: 1, title: "Cucito a mano", description: "Ogni singola asola è rifinita manualmente", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg?_wi=2" },
+              { id: 2, title: "Tessuti Premium", description: "Selezioniamo solo le fibre più nobili", imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg?_wi=2" }
             ]}
           />
         </div>
