@@ -96,6 +96,7 @@ export default function LandingPage() {
             animationType="slide-up"
             textboxLayout="split"
             useInvertedBackground={false}
+            buttons={[{ text: "Prenota Appuntamento", href: "#contact" }]}
             products={[
               { id: "1", name: "Abito cerimonia uomo", price: "€1.200", imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-beige-checkered-suit-posing-street-background_158538-2633.jpg" }
             ]}
