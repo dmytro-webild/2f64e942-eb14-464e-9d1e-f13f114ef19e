@@ -46,7 +46,7 @@ export default function LandingPage() {
         <div id="hero" data-section="hero">
           <HeroBillboardRotatedCarousel
             title="L'Arte della Sartoria Italiana"
-            description="Elegantia Romana: l'eccellenza del su misura, dove ogni dettaglio è un'opera d'arte cucita a mano."
+            description="Elegantia Romana: scopri la vera essenza del su misura. Ogni nostro abito è un capo bespoke, creato a mano per offrire una vestibilità perfetta che esalta la tua unicità."
             background={{ variant: "plain" }}
             buttons={[
               { text: "Scopri la Nostra Artigianalità", href: "#products" },
