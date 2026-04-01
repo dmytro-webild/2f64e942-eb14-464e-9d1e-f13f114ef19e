@@ -12,7 +12,7 @@ import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCar
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
-import { ShieldCheck, User, Star } from "lucide-react";
+import { ShieldCheck, Star } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -47,6 +47,7 @@ export default function LandingPage() {
           <HeroBillboardRotatedCarousel
             title="L'Arte della Sartoria Italiana"
             description="Elegantia Romana: l'eccellenza del su misura, dove ogni dettaglio è un'opera d'arte cucita a mano."
+            background={{ variant: "plain" }}
             buttons={[
               { text: "Scopri la Nostra Artigianalità", href: "#products" },
               { text: "Prenota la Tua Prova in Atelier", href: "#contact" }
@@ -70,6 +71,7 @@ export default function LandingPage() {
             subdescription="Ogni capo che realizziamo rispetta la tradizione sartoriale italiana, con una vestibilità che accarezza la silhouette."
             icon={ShieldCheck}
             imageSrc="http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg"
+            useInvertedBackground={false}
           />
         </div>
 
@@ -78,6 +80,7 @@ export default function LandingPage() {
             title="Perché sceglierci"
             description="Dettagli unici per una vestibilità impeccabile."
             textboxLayout="split"
+            useInvertedBackground={false}
             features={[
               { id: 1, title: "Cucito a mano", description: "Ogni singola asola è rifinita manualmente", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg" },
               { id: 2, title: "Tessuti Premium", description: "Selezioniamo solo le fibre più nobili", imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg" }
@@ -92,6 +95,7 @@ export default function LandingPage() {
             gridVariant="asymmetric-60-wide-40-narrow"
             animationType="slide-up"
             textboxLayout="split"
+            useInvertedBackground={false}
             products={[
               { id: "1", name: "Abito cerimonia uomo", price: "€1.200", imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-beige-checkered-suit-posing-street-background_158538-2633.jpg" }
             ]}
@@ -101,6 +105,9 @@ export default function LandingPage() {
         <div id="metrics" data-section="metrics">
           <MetricCardTen
             title="Numeri di stile"
+            description="I nostri numeri parlano di qualità"
+            textboxLayout="left"
+            useInvertedBackground={false}
             metrics={[
               { id: "1", title: "Anni di storia", subtitle: "Passione italiana", category: "Tradizione", value: "50+" },
               { id: "2", title: "Capi realizzati", subtitle: "Su misura", category: "Produzione", value: "10k+" }
@@ -112,6 +119,9 @@ export default function LandingPage() {
         <div id="testimonials" data-section="testimonials">
           <TestimonialCardTwo
             title="La voce dei clienti"
+            description="Cosa dicono i nostri gentiluomini"
+            textboxLayout="split"
+            useInvertedBackground={false}
             testimonials={[
               { id: "1", name: "Alessandro V.", role: "Imprenditore", testimonial: "Eccellenza pura, ogni capo è un capolavoro.", icon: Star }
             ]}
@@ -127,6 +137,7 @@ export default function LandingPage() {
             ]}
             sideTitle="Domande frequenti"
             faqsAnimation="slide-up"
+            useInvertedBackground={false}
           />
         </div>
 
@@ -137,6 +148,7 @@ export default function LandingPage() {
             description="Siamo pronti a dare vita al tuo stile unico. Prenota oggi la tua consulenza."
             buttons={[{ text: "Prenota la Tua Prova in Atelier", href: "#contact-form" }]}
             background={{ variant: "plain" }}
+            useInvertedBackground={false}
           />
         </div>
 
