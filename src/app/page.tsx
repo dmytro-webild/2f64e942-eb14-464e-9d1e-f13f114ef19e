@@ -12,7 +12,7 @@ import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCar
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
-import { ShieldCheck, Star, Globe } from "lucide-react";
+import { ShieldCheck, Star } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -38,7 +38,6 @@ export default function LandingPage() {
               { name: "Recensioni", id: "testimonials" },
               { name: "FAQ", id: "faq" },
               { name: "Prenota", id: "contact" },
-              { name: "IT / RU / EN", id: "lang" }
             ]}
             brandName="Elegantia Romana"
           />
@@ -83,7 +82,7 @@ export default function LandingPage() {
             textboxLayout="split"
             useInvertedBackground={false}
             features={[
-              { id: 1, title: "Cucito a mano", description: "Ogni singola asola è rifinita manualmente", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg?_wi=2" },
+              { id: 1, title: "Cucito a mano", description: "Hand-finished details that ensure lifelong durability and superior aesthetics", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg?_wi=2" },
               { id: 2, title: "Tessuti Premium", description: "Selezioniamo solo le fibre più nobili", imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg?_wi=2" }
             ]}
           />
