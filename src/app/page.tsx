@@ -12,7 +12,7 @@ import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCar
 import FaqSplitText from '@/components/sections/faq/FaqSplitText';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterSimple from '@/components/sections/footer/FooterSimple';
-import { ShieldCheck, Star } from "lucide-react";
+import { ShieldCheck, Star, Globe } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -38,6 +38,7 @@ export default function LandingPage() {
               { name: "Recensioni", id: "testimonials" },
               { name: "FAQ", id: "faq" },
               { name: "Prenota", id: "contact" },
+              { name: "IT / RU / EN", id: "lang" }
             ]}
             brandName="Elegantia Romana"
           />
