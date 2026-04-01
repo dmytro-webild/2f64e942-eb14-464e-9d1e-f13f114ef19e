@@ -2,14 +2,17 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactText from '@/components/sections/contact/ContactText';
-import FeatureCardSeven from '@/components/sections/feature/FeatureCardSeven';
-import FooterSimple from '@/components/sections/footer/FooterSimple';
-import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGallery';
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
-import SplitAbout from '@/components/sections/about/SplitAbout';
-import TestimonialCardTen from '@/components/sections/testimonial/TestimonialCardTen';
-import { Instagram } from "lucide-react";
+import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
+import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
+import FeatureCardSix from '@/components/sections/feature/FeatureCardSix';
+import ProductCardOne from '@/components/sections/product/ProductCardOne';
+import MetricCardTen from '@/components/sections/metrics/MetricCardTen';
+import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
+import FaqSplitText from '@/components/sections/faq/FaqSplitText';
+import ContactCTA from '@/components/sections/contact/ContactCTA';
+import FooterSimple from '@/components/sections/footer/FooterSimple';
+import { ShieldCheck, User, Star } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -26,141 +29,126 @@ export default function LandingPage() {
         headingFontWeight="semibold"
     >
       <ReactLenis root>
-  <div id="nav" data-section="nav">
-      <NavbarStyleApple
-      navItems={[
-        {
-          name: "Home",          id: "hero"},
-        {
-          name: "Sartoria",          id: "about"},
-        {
-          name: "Servizi",          id: "services"},
-        {
-          name: "Recensioni",          id: "testimonials"},
-        {
-          name: "Prenota",          id: "contact"},
-      ]}
-      brandName="Elegantia Romana"
-    />
-  </div>
+        <div id="nav" data-section="nav">
+          <NavbarStyleApple
+            navItems={[
+              { name: "Home", id: "hero" },
+              { name: "Atelier", id: "about" },
+              { name: "Collezione", id: "products" },
+              { name: "Recensioni", id: "testimonials" },
+              { name: "FAQ", id: "faq" },
+              { name: "Prenota", id: "contact" },
+            ]}
+            brandName="Elegantia Romana"
+          />
+        </div>
 
-  <div id="hero" data-section="hero">
-      <HeroBillboardGallery
-      background={{
-        variant: "plain"}}
-      title="L'Arte della Sartoria Italiana"
-      description="Elegantia Romana: l'eccellenza del su misura, dove ogni dettaglio è un'opera d'arte cucita a mano."
-      buttons={[
-        {
-          text: "Scopri la Nostra Artigianalità",          href: "#shop"},
-        {
-          text: "Prenota Appuntamento",          href: "#contact"},
-      ]}
-      mediaItems={[
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-male-fashion-designer-s-hand-taking-measurement-blue-fabric-with-yellow-measuring-tape_23-2148180373.jpg",          imageAlt: "Atelier artigianale"},
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-groom-getting-dressed-his-wedding-day-putting-decoration-brooch-lapel-his-jacket_637285-954.jpg?_wi=1",          imageAlt: "Abito su misura"},
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg?_wi=1",          imageAlt: "Camicia seta donna"},
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg?_wi=1",          imageAlt: "Servizio wedding"},
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg?_wi=1",          imageAlt: "Dettaglio cuciture"},
-        {
-          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg?_wi=1",          imageAlt: "Cliente soddisfatto"},
-      ]}
-      mediaAnimation="slide-up"
-    />
-  </div>
+        <div id="hero" data-section="hero">
+          <HeroBillboardRotatedCarousel
+            title="L'Arte della Sartoria Italiana"
+            description="Elegantia Romana: l'eccellenza del su misura, dove ogni dettaglio è un'opera d'arte cucita a mano."
+            buttons={[
+              { text: "Scopri la Nostra Artigianalità", href: "#products" },
+              { text: "Prenota la Tua Prova in Atelier", href: "#contact" }
+            ]}
+            carouselItems={[
+              { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/close-up-male-fashion-designer-s-hand-taking-measurement-blue-fabric-with-yellow-measuring-tape_23-2148180373.jpg" },
+              { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/close-up-groom-getting-dressed-his-wedding-day-putting-decoration-brooch-lapel-his-jacket_637285-954.jpg" },
+              { id: "3", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg" },
+              { id: "4", imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg" },
+              { id: "5", imageSrc: "http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg" },
+              { id: "6", imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg" }
+            ]}
+          />
+        </div>
 
-  <div id="about" data-section="about">
-      <SplitAbout
-      textboxLayout="split"
-      useInvertedBackground={false}
-      title="Tradizione ed Esclusività"
-      description="Elegantia Romana nasce nel cuore di Roma per ridare vita ai canoni dell'eleganza classica. Ogni capo che realizziamo rispetta la tradizione sartoriale italiana: asole ribattute a mano, tele interamente lavorate, e una vestibilità che accarezza la silhouette."
-      bulletPoints={[
-        {
-          title: "Artigianalità Pura",          description: "Lavorazioni manuali d'eccellenza, senza compromessi industriali."},
-        {
-          title: "Tessuti Nobili",          description: "Collaborazioni con le migliori manifatture mondiali: Scabal, Zegna, Cariaggi."},
-        {
-          title: "Esperienza Unica",          description: "Un servizio di consulenza dedicato nel nostro atelier di Via Corsica."},
-      ]}
-      imageSrc="http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg?_wi=2"
-      imageAlt="Sartoria artigianale"
-      mediaAnimation="slide-up"
-    />
-  </div>
+        <div id="about" data-section="about">
+          <TestimonialAboutCard
+            tag="Sartoria"
+            title="Tradizione ed Esclusività"
+            description="La nostra sartoria nasce nel cuore di Roma per ridare vita ai canoni dell'eleganza classica."
+            subdescription="Ogni capo che realizziamo rispetta la tradizione sartoriale italiana, con una vestibilità che accarezza la silhouette."
+            icon={ShieldCheck}
+            imageSrc="http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg"
+          />
+        </div>
 
-  <div id="services" data-section="services">
-      <FeatureCardSeven
-      animationType="slide-up"
-      textboxLayout="default"
-      useInvertedBackground={false}
-      features={[
-        {
-          id: 1,
-          title: "Abiti su Misura Uomo",          description: "L'apice dell'eleganza maschile, lavorato con tele sartoriali autentiche.",          imageSrc: "http://img.b2bpic.net/free-photo/close-up-groom-getting-dressed-his-wedding-day-putting-decoration-brooch-lapel-his-jacket_637285-954.jpg?_wi=2",          imageAlt: "Abito su misura"},
-        {
-          id: 2,
-          title: "Servizio Wedding Premium",          description: "Consulenza esclusiva per il giorno più importante, con finiture sartoriali uniche.",          imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg?_wi=2",          imageAlt: "Servizio matrimonio"},
-        {
-          id: 3,
-          title: "Camiceria Donna & Uomo",          description: "Lino, seta e cotoni premium. Ogni camicia è un pezzo unico.",          imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg?_wi=2",          imageAlt: "Camiceria sartoriale"},
-      ]}
-      title="I Nostri Servizi"
-      description="Dall'abito cerimonia uomo alla camiceria sartoriale donna, ogni creazione è su misura per il tuo stile unico."
-    />
-  </div>
+        <div id="features" data-section="features">
+          <FeatureCardSix
+            title="Perché sceglierci"
+            description="Dettagli unici per una vestibilità impeccabile."
+            textboxLayout="split"
+            features={[
+              { id: 1, title: "Cucito a mano", description: "Ogni singola asola è rifinita manualmente", imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg" },
+              { id: 2, title: "Tessuti Premium", description: "Selezioniamo solo le fibre più nobili", imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg" }
+            ]}
+          />
+        </div>
 
-  <div id="testimonials" data-section="testimonials">
-      <TestimonialCardTen
-      textboxLayout="default"
-      useInvertedBackground={false}
-      testimonials={[
-        {
-          id: "1",          title: "Eleganza impeccabile",          quote: "La qualità dei tessuti e la maestria nel taglio sono semplicemente fuori dal comune. Un servizio di altissimo livello.",          name: "Alessandro V.",          role: "Imprenditore",          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg?_wi=2"},
-        {
-          id: "2",          title: "Camicia perfetta",          quote: "Ho scelto una camicia in seta ed è diventata il capo preferito del mio guardaroba. Cura del dettaglio ossessiva.",          name: "Giulia R.",          role: "Avvocato",          imageSrc: "http://img.b2bpic.net/free-photo/young-handsome-man-choosing-clothes-shop_1303-19714.jpg"},
-        {
-          id: "3",          title: "Servizio Premium",          quote: "Per il mio matrimonio volevo qualcosa di unico. Hanno capito esattamente cosa cercavo e il risultato è stato superiore alle aspettative.",          name: "Marco S.",          role: "Manager",          imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-beige-checkered-suit-posing-street-background_158538-2633.jpg"},
-        {
-          id: "4",          title: "Un'esperienza sartoriale",          quote: "La differenza tra un capo industriale e uno artigianale di Elegantia Romana si vede e si sente. Esperienza unica.",          name: "Roberto D.",          role: "Architetto",          imageSrc: "http://img.b2bpic.net/free-photo/happy-businessman-talking-phone-while-sitting-cafe_637285-8834.jpg"},
-        {
-          id: "5",          title: "Eccellenza Romana",          quote: "Un atelier che rispecchia la vera maestria italiana. Attenzione al cliente di altissimo livello.",          name: "Francesca L.",          role: "Designer",          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg?_wi=3"},
-      ]}
-      title="La Voce dei Clienti"
-      description="L'eleganza è un'esperienza che i nostri clienti scelgono di vivere e condividere."
-    />
-  </div>
+        <div id="products" data-section="products">
+          <ProductCardOne
+            title="La nostra collezione"
+            description="Scopri l'esclusività dei nostri capi su misura."
+            gridVariant="asymmetric-60-wide-40-narrow"
+            animationType="slide-up"
+            textboxLayout="split"
+            products={[
+              { id: "1", name: "Abito cerimonia uomo", price: "€1.200", imageSrc: "http://img.b2bpic.net/free-photo/portrait-sexy-handsome-fashion-male-model-man-dressed-elegant-beige-checkered-suit-posing-street-background_158538-2633.jpg" }
+            ]}
+          />
+        </div>
 
-  <div id="contact" data-section="contact">
-      <ContactText
-      useInvertedBackground={false}
-      background={{
-        variant: "plain"}}
-      text="Siamo pronti ad accoglierti nella nostra sartoria. Prenota una consulenza privata o richiedi informazioni su un progetto sartoriale personalizzato."
-      buttons={[
-        {
-          text: "WhatsApp: +39 06 6948 9370",          href: "https://wa.me/390669489370"},
-        {
-          text: "Prenota la Tua Prova in Atelier",          href: "https://maps.app.goo.gl/placeholder"},
-      ]}
-    />
-  </div>
+        <div id="metrics" data-section="metrics">
+          <MetricCardTen
+            title="Numeri di stile"
+            metrics={[
+              { id: "1", title: "Anni di storia", subtitle: "Passione italiana", category: "Tradizione", value: "50+" },
+              { id: "2", title: "Capi realizzati", subtitle: "Su misura", category: "Produzione", value: "10k+" }
+            ]}
+            animationType="slide-up"
+          />
+        </div>
 
-  <div id="footer" data-section="footer">
-      <FooterSimple
-        columns={[
-          { title: "Elegantia", items: [{ label: "Chi Siamo", href: "#about" }, { label: "Contatti", href: "#contact" }] },
-          { title: "Servizi", items: [{ label: "Abiti", href: "#services" }, { label: "Camiceria", href: "#services" }] }
-        ]}
-        bottomLeftText="© 2025 Elegantia Romana"
-        bottomRightText="I18n Supported"
-      />
-  </div>
+        <div id="testimonials" data-section="testimonials">
+          <TestimonialCardTwo
+            title="La voce dei clienti"
+            testimonials={[
+              { id: "1", name: "Alessandro V.", role: "Imprenditore", testimonial: "Eccellenza pura, ogni capo è un capolavoro.", icon: Star }
+            ]}
+            animationType="slide-up"
+          />
+        </div>
+
+        <div id="faq" data-section="faq">
+          <FaqSplitText
+            faqs={[
+              { id: "1", title: "Come prenoto una prova?", content: "Puoi prenotare direttamente tramite il nostro form online o chiamandoci."},
+              { id: "2", title: "Quali sono i tempi?", content: "Solitamente 4-6 settimane per un abito completo su misura."}
+            ]}
+            sideTitle="Domande frequenti"
+            faqsAnimation="slide-up"
+          />
+        </div>
+
+        <div id="contact" data-section="contact">
+          <ContactCTA
+            tag="Contatti"
+            title="Entra nel nostro atelier"
+            description="Siamo pronti a dare vita al tuo stile unico. Prenota oggi la tua consulenza."
+            buttons={[{ text: "Prenota la Tua Prova in Atelier", href: "#contact-form" }]}
+            background={{ variant: "plain" }}
+          />
+        </div>
+
+        <div id="footer" data-section="footer">
+          <FooterSimple
+            columns={[
+              { title: "Elegantia", items: [{ label: "Chi Siamo", href: "#about" }, { label: "Contatti", href: "#contact" }] }
+            ]}
+            bottomLeftText="© 2025 Elegantia Romana"
+            bottomRightText="I18n Supported"
+          />
+        </div>
       </ReactLenis>
     </ThemeProvider>
   );
