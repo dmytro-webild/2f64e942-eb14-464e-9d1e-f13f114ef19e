@@ -52,7 +52,7 @@ export default function LandingPage() {
       description="Elegantia Romana: l'eccellenza del su misura, dove ogni dettaglio è un'opera d'arte cucita a mano."
       buttons={[
         {
-          text: "Configura Camicia",          href: "#shop"},
+          text: "Scopri la Nostra Artigianalità",          href: "#shop"},
         {
           text: "Prenota Appuntamento",          href: "#contact"},
       ]}
