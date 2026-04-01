@@ -146,7 +146,7 @@ export default function LandingPage() {
         {
           text: "WhatsApp: +39 06 6948 9370",          href: "https://wa.me/390669489370"},
         {
-          text: "Via Corsica 12, Roma",          href: "https://maps.app.goo.gl/placeholder"},
+          text: "Prenota la Tua Prova in Atelier",          href: "https://maps.app.goo.gl/placeholder"},
       ]}
     />
   </div>
