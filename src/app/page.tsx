@@ -106,7 +106,7 @@ export default function LandingPage() {
           <MetricCardTen
             title="Numeri di stile"
             description="I nostri numeri parlano di qualità"
-            textboxLayout="centered"
+            textboxLayout="default"
             useInvertedBackground={false}
             metrics={[
               { id: "1", title: "Anni di storia", subtitle: "Passione italiana", category: "Tradizione", value: "50+" },
