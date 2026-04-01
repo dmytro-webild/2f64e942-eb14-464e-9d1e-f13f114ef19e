@@ -77,23 +77,23 @@ export default function LandingPage() {
           imageAlt: "Atelier artigianale",
         },
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-groom-getting-dressed-his-wedding-day-putting-decoration-brooch-lapel-his-jacket_637285-954.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/close-up-groom-getting-dressed-his-wedding-day-putting-decoration-brooch-lapel-his-jacket_637285-954.jpg?_wi=1",
           imageAlt: "Abito su misura",
         },
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg?_wi=1",
           imageAlt: "Camicia seta donna",
         },
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg?_wi=1",
           imageAlt: "Servizio wedding",
         },
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg?_wi=1",
           imageAlt: "Dettaglio cuciture",
         },
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg?_wi=1",
           imageAlt: "Cliente soddisfatto",
         },
       ]}
@@ -121,7 +121,7 @@ export default function LandingPage() {
           description: "Un servizio di consulenza dedicato nel nostro atelier di Via Corsica.",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/hands-assembling-advent-wreath_23-2150820769.jpg?_wi=2"
       imageAlt="Sartoria artigianale"
       mediaAnimation="slide-up"
     />
@@ -137,21 +137,21 @@ export default function LandingPage() {
           id: 1,
           title: "Abiti su Misura Uomo",
           description: "L'apice dell'eleganza maschile, lavorato con tele sartoriali autentiche.",
-          imageSrc: "http://img.b2bpic.net/free-photo/close-up-groom-getting-dressed-his-wedding-day-putting-decoration-brooch-lapel-his-jacket_637285-954.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/close-up-groom-getting-dressed-his-wedding-day-putting-decoration-brooch-lapel-his-jacket_637285-954.jpg?_wi=2",
           imageAlt: "Abito su misura",
         },
         {
           id: 2,
           title: "Servizio Wedding Premium",
           description: "Consulenza esclusiva per il giorno più importante, con finiture sartoriali uniche.",
-          imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/young-fashion-designer-checking-quality-custom-made-elegant-men-s-suit-dark-tailor-studio_613910-20246.jpg?_wi=2",
           imageAlt: "Servizio matrimonio",
         },
         {
           id: 3,
           title: "Camiceria Donna & Uomo",
           description: "Lino, seta e cotoni premium. Ogni camicia è un pezzo unico.",
-          imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/tailor-sewing-blue-suit_329181-13646.jpg?_wi=2",
           imageAlt: "Camiceria sartoriale",
         },
       ]}
@@ -171,7 +171,7 @@ export default function LandingPage() {
           quote: "La qualità dei tessuti e la maestria nel taglio sono semplicemente fuori dal comune. Un servizio di altissimo livello.",
           name: "Alessandro V.",
           role: "Imprenditore",
-          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg?_wi=2",
         },
         {
           id: "2",
@@ -203,7 +203,7 @@ export default function LandingPage() {
           quote: "Un atelier che rispecchia la vera maestria italiana. Attenzione al cliente di altissimo livello.",
           name: "Francesca L.",
           role: "Designer",
-          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/crazy-businessman-worried-expression_1194-3826.jpg?_wi=3",
         },
       ]}
       title="La Voce dei Clienti"
