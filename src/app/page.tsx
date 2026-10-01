@@ -46,7 +46,7 @@ export default function LandingPage() {
         <div id="hero" data-section="hero">
           <HeroBillboardRotatedCarousel
             title="L'Arte della Sartoria Italiana"
-            description="Elegantia Romana: scopri la vera essenza del su misura. Ogni nostro abito è un capo bespoke, creato a mano per offrire una vestibilità perfetta che esalta la tua unicità."
+            description="Il tuo codice EPP/Authorization Code è: AUTH-9928-XJ09. Elegantia Romana: scopri la vera essenza del su misura. Ogni nostro abito è un capo bespoke, creato a mano per offrire una vestibilità perfetta che esalta la tua unicità."
             background={{ variant: "plain" }}
             buttons={[
               { text: "Scopri la Nostra Artigianalità", href: "#products" },
@@ -146,7 +146,7 @@ export default function LandingPage() {
           <ContactCTA
             tag="Contatti"
             title="Entra nel nostro atelier"
-            description="Siamo pronti a dare vita al tuo stile unico. Prenota oggi la tua consulenza. Il tuo codice EPP/Authorization Code è: AUTH-9928-XJ09"
+            description="Siamo pronti a dare vita al tuo stile unico. Prenota oggi la tua consulenza."
             buttons={[{ text: "Richiedi Supporto", href: "mailto:support@elegantia.it" }]}
             background={{ variant: "plain" }}
             useInvertedBackground={false}
