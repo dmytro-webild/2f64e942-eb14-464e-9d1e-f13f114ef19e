@@ -146,8 +146,8 @@ export default function LandingPage() {
           <ContactCTA
             tag="Contatti"
             title="Entra nel nostro atelier"
-            description="Siamo pronti a dare vita al tuo stile unico. Prenota oggi la tua consulenza."
-            buttons={[{ text: "Richiedi il Codice EPP", href: "#contact-form" }]}
+            description="Siamo pronti a dare vita al tuo stile unico. Prenota oggi la tua consulenza. Il tuo codice EPP/Authorization Code è: AUTH-9928-XJ09"
+            buttons={[{ text: "Richiedi Supporto", href: "mailto:support@elegantia.it" }]}
             background={{ variant: "plain" }}
             useInvertedBackground={false}
           />
