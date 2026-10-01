@@ -147,7 +147,7 @@ export default function LandingPage() {
             tag="Contatti"
             title="Entra nel nostro atelier"
             description="Siamo pronti a dare vita al tuo stile unico. Prenota oggi la tua consulenza."
-            buttons={[{ text: "Il codice EPP è necessario per trasferire il tuo dominio. Puoi richiederlo tramite il tuo attuale registrar.", href: "#contact-form" }]}
+            buttons={[{ text: "Richiedi il Codice EPP", href: "#contact-form" }]}
             background={{ variant: "plain" }}
             useInvertedBackground={false}
           />
