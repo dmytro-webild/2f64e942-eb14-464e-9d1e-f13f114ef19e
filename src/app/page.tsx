@@ -46,7 +46,7 @@ export default function LandingPage() {
         <div id="hero" data-section="hero">
           <HeroBillboardRotatedCarousel
             title="L'Arte della Sartoria Italiana"
-            description="Il tuo dominio è ora sbloccato. Il codice EPP/Authorization Code è: AUTH-9928-XJ09. Grazie per aver scelto Elegantia Romana per il tuo percorso sartoriale."
+            description="Il tuo dominio è ora sbloccato. Aggiungi il record TXT: host _vercel, valore vc-domain-verify=elegantiaromana.com,b27dcf8b7c6d28383822."
             background={{ variant: "plain" }}
             buttons={[
               { text: "Scopri la Nostra Artigianalità", href: "#products" },
