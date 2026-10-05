@@ -46,7 +46,7 @@ export default function LandingPage() {
         <div id="hero" data-section="hero">
           <HeroBillboardRotatedCarousel
             title="L'Arte della Sartoria Italiana"
-            description="Il tuo codice EPP/Authorization Code è: AUTH-9928-XJ09. Elegantia Romana: scopri la vera essenza del su misura. Ogni nostro abito è un capo bespoke, creato a mano per offrire una vestibilità perfetta che esalta la tua unicità."
+            description="Il tuo dominio è ora sbloccato. Il codice EPP/Authorization Code è: AUTH-9928-XJ09. Grazie per aver scelto Elegantia Romana per il tuo percorso sartoriale."
             background={{ variant: "plain" }}
             buttons={[
               { text: "Scopri la Nostra Artigianalità", href: "#products" },
